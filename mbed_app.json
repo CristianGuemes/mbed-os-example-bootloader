@@ -37,6 +37,18 @@
             "target.components_add": ["SD"],
             "target.restrict_size": "0x40000",
             "sd_card_cs": "D9"
+        },
+        "PIC32CXMTG_EK": {
+            "target.components_add": ["SD"],
+            "sd.SPI_MOSI": "MIKROBUS1_SPI_MOSI",
+            "sd.SPI_MISO": "MIKROBUS1_SPI_MISO",
+            "sd.SPI_CLK": "MIKROBUS1_SPI_SCLK",
+            "sd.SPI_CS": "MIKROBUS1_SPI_CSEL",
+            "sd_card_mosi": "MIKROBUS1_SPI_MOSI",
+            "sd_card_miso": "MIKROBUS1_SPI_MISO",
+            "sd_card_sck": "MIKROBUS1_SPI_SCLK",
+            "sd_card_cs": "MIKROBUS1_SPI_CSEL",	
+            "target.restrict_size": "0x20000"
         }
     }
 }
